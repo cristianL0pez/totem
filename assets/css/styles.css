@@ -1,0 +1,42 @@
+:root {
+    --primary: #ffc107;
+    --dark: #1a1a1a;
+    --light: #f4f4f4;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    background-color: var(--light);
+}
+
+.kiosko-container {
+    display: grid;
+    grid-template-columns: 120px 1fr 350px;
+    height: 100-vh;
+}
+
+/* Tarjetas de Producto */
+.product-card {
+    background: white;
+    border-radius: 15px;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+
+.product-card:active { transform: scale(0.95); }
+
+.product-card img { width: 100%; border-radius: 10px; }
+
+.checkout-btn {
+    background: #28a745;
+    color: white;
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
